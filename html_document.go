@@ -26,7 +26,7 @@ func (htmlDoc *htmlDocument) bytes() []byte {
 		lineWrapColumn:       LineWrapColumn,
 		lineWrapMaxSpillover: LineWrapMaxSpillover,
 
-		indentString: defaultIndentString,
+		indentString: DefaultIndentString,
 		indentLevel:  startIndent,
 	}
 

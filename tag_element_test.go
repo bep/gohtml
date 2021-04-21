@@ -11,7 +11,7 @@ func TestTagElementWrite(t *testing.T) {
 	grandChild := &textElement{text: "Test text"}
 	child.appendChild(grandChild)
 	tagElem.appendChild(child)
-	bf := &formattedBuffer{buffer: &bytes.Buffer{}, indentString: defaultIndentString}
+	bf := &formattedBuffer{buffer: &bytes.Buffer{}, indentString: DefaultIndentString}
 	tagElem.write(bf, true)
 	actual := bf.buffer.String()
 	expected := `<body>
